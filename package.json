@@ -1,0 +1,26 @@
+{
+  "name": "hello-world-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-carey/hello-world-nodejs.git"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mike-carey/hello-world-nodejs/issues"
+  },
+  "homepage": "https://github.com/mike-carey/hello-world-nodejs#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
