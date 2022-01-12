@@ -1,0 +1,21 @@
+- pipeline: "Test"
+  on: "EVENT"
+  events:
+  - type: "PUSH"
+    refs:
+    - "refs/heads/main"
+  priority: "NORMAL"
+  actions:
+  - action: "Execute: npm test"
+    type: "BUILD"
+    working_directory: "/buddy/hello-world-nodejs"
+    docker_image_name: "library/node"
+    docker_image_tag: "12"
+    execute_commands:
+    - "# yarn install"
+    - "npm install"
+    - "npm test"
+    volume_mappings:
+    - "/:/buddy/hello-world-nodejs"
+    cache_base_image: true
+    shell: "BASH"
